@@ -1,0 +1,3 @@
+-keep class com.songag.loadmultipledexs.LoadDexsActivity { *; }
+-keep class com.songag.loadmultipledexs.LoadDexsActivity$1 { *; }
+-keep class com.songag.loadmultipledexs.LoadDexsActivity$1$1 { *; }
