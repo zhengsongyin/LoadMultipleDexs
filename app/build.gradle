@@ -13,11 +13,13 @@ android {
     buildTypes {
 
         debug {
+            //如果主dex不包含LoadDexsActivity类和内部类的话，一起动的时候就崩溃，可以加以下这些代码把他们保留在主dex。
             multiDexKeepProguard file('multidex-config.pro')
         }
 
         release {
             minifyEnabled false
+            //如果主dex不包含LoadDexsActivity类和内部类的话，一起动的时候就崩溃，可以加以下这些代码把他们保留在主dex。
             multiDexKeepProguard file('multidex-config.pro')
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
